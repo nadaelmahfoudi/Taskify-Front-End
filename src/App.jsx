@@ -14,7 +14,8 @@ const App = () => {
        <Hero title = "Welcome to Taskify"/>
        <Routes>
         <Route path = "/" element = {<Tasks />}/>
-        <Route path = "/task/:id" element = {<Task />}/>
+        <Route path = "/task/:id" element = {<Task  />}/>
+        <Route path = "/task/new" element = {<Task  />}/>
        </Routes>
        
        {/* <Task /> */}
