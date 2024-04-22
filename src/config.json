@@ -1,3 +1,4 @@
 {
-    "apiUrl" : "http://127.0.0.1:8000/api/V2/tasks"
+    "apiUrl" : "http://127.0.0.1:8000/api/V2/tasks",
+    "apiUrl1": "http://127.0.0.1:8000/api/Auth"
 }

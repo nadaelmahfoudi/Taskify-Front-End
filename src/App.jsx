@@ -1,28 +1,28 @@
+import React from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
+import Login from './pages/Login.jsx';
+import Register from './pages/Register.jsx';
 import Tasks from "../src/pages/Tasks/Tasks";
 import Task from "../src/pages/Task/Task";
-import { Routes, Route } from 'react-router-dom';
-
-import React from 'react'
 
 const App = () => {
   return (
-    <div>
-    <div>
-      <Navbar />
-       <Hero title = "Welcome to Taskify"/>
-       <Routes>
-        <Route path = "/" element = {<Tasks />}/>
-        <Route path = "/task/:id" element = {<Task  />}/>
-        <Route path = "/task/new" element = {<Task  />}/>
-       </Routes>
-       
-       {/* <Task /> */}
+    <Router>
+      <div>
+        <Navbar />
+        <Hero title="Welcome to Taskify" />
+        <Routes>
+          <Route path="/" element={<Tasks />} />
+          <Route path="/task/:id" element={<Task />} />
+          <Route path="/task/new" element={<Task />} />
+          <Route path="/login" element={<Login />} />
+          <Route path="/register" element={<Register />} />
+        </Routes>
+      </div>
+    </Router>
+  );
+};
 
-       </div>
-    </div>
-  )
-}
-
-export default App
+export default App;

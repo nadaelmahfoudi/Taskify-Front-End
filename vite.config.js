@@ -6,5 +6,11 @@ export default defineConfig({
   plugins: [react()],
   serve: {
     port : 3000,
+  },
+  resolve: {
+    alias: {
+      '@config': '/src/config.json'
+    },
+    extensions: ['.mjs', '.js', '.ts', '.jsx', '.tsx'],
   }
 })
